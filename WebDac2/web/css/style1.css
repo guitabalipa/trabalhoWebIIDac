@@ -1,0 +1,448 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07/05/2015, 14:00:05
+    Author     : DeusFelipe
+*/
+@charset "utf-8";
+/* CSS Document */
+html, body, #wrap {height: 100%;}
+ 
+body > #wrap {height: auto; min-height: 100%;}
+	text{
+		background-color:#0F0;
+	}
+	#conteudo {
+		overflow:auto;
+		background-color:#D0D0D0;
+		position:relative;
+		text-align: left;
+		border-left: solid 1px;
+		border-right: solid 1px;
+		font-size:12pt;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-weight:bold;
+		height: 100%;
+		width:60%;
+		left: 18%;
+                top:1%;
+	}
+	
+	.but{
+		background-color:#FFF;
+		font-size:11pt;
+		font-family: Verdana;
+		font-weight:bold;
+		border-radius:10px;
+		color:#000;
+		box-shadow:2px 2px 2px #000000;
+		padding-left:50px;
+		padding-right:50px;
+		top:5px;
+		right:5px;
+		height:30px;
+		font-size:15px;
+		position:relative;
+		text-decoration: none;
+		box-sizing: border-box;
+	}
+	.but:hover {
+		background-image: linear-gradient(to bottom, transparent, rgba(0,0,0,.15));
+		cursor: pointer;
+	}
+	body
+	{
+		background-color:white;
+		text-align:justify;
+	}
+ 
+	#footer {
+		background-color: #4791DA;
+		text-align: center;
+		border: solid 1px Gray;
+		font-size:8pt;
+		font-family: Verdana;
+		font-weight:bold;
+		width:100%;
+		color:White;
+		position:fixed;
+		bottom:0px;
+		left:0px;
+	}
+	#logo{
+		background-image:url(ext/siren.png);
+		background-repeat:no-repeat;
+		height: 10px;
+		min-height: 100%;
+		text-align: left;
+		width:30%;
+		position:relative;
+		top:0px;
+		left:19%;
+	}
+	#blue{
+		background-image:url(ext/blue.png);
+		width:4px;
+		height:999px;
+	}
+	#header {
+		background-color: #606060;	
+		height:13%;
+		width:100%;
+		color:White;
+		position:absolute;
+		top:0px;
+		left:0px;
+	}
+	#searchbox{
+		/* width: 30%; */
+		/* height: 40%; */
+		margin-left: 40%;
+		margin-top: 0.2%;
+		overflow: hidden; /* Clear floats */
+		position:relative;
+	}
+	.search {
+		padding:8px 15px;
+		background:rgba(50, 50, 50, 0.2);
+		border:0px solid #dbdbdb;
+		width: 350px;
+		height: 25px;
+                background-color: white;
+	}
+	.button {
+		position:relative;
+		padding:0px 15px;
+		left:-3px;
+		border:2px solid #207cca;
+		background-color:#207cca;
+		color:#fafafa;
+		width: 100px;
+		height: 43px;
+	}
+        .button:hover{
+		background-color:#fafafa;
+		color:#207cca;
+	}
+	#controller{
+		background-color:#D0D0D0;
+		width: 100%;
+                height: auto;
+		position: relative;
+	}
+        #loginBox{
+                margin-left: 40%;
+		margin-top: 50px;
+		overflow: hidden; /* Clear floats */
+		position:relative;
+                color: white;
+                height: auto;
+        }
+        #carrinho{
+                float: right;
+                width: 7%;
+                height: 43px;
+                background-color: #0F0;
+                margin-top: -43px;
+                position: relative;
+                right: 22.5%;
+        }
+	.button2{
+		position:relative;
+		padding:6px 15px;
+		left:10px;
+		border:2px solid #404040 ;
+		background-color:#505050 ;
+		color:#fafafa;
+		width: 155px;
+		height: 40px;
+                margin-bottom: 5px;
+	}
+	.button2:hover{
+		background-color:#fafafa;
+		color:#207cca;
+	}
+        .btnOutlet{
+                position:relative;
+		padding:6px 15px;
+		right:10px;
+		background-color:#006699 ;
+		color:#fafafa;
+		width: 140px;
+		height: 30px;
+                float: right;
+                margin-top: 5px;
+        }
+        .btnOutlet:hover{
+		background-color:#fafafa;
+		color:#207cca;
+	}
+        #banner{
+                height: auto;
+                width: auto;
+        }
+	#barralateral{
+		width: 25%;
+		height: 100%;
+		float: left;
+		background-color: #D0D0D0;
+		margin-top: 5%;
+	}
+	#selecionar{
+		width: 75%;
+		float: right;
+		background-color: #D0D0D0;
+		margin-top: 5%;
+	}
+	#principal{
+		width: 75%;
+		float: right;
+		background-color: #D0D0D0;
+		margin-top: 5%;
+	}
+	#carrinhotela{
+		width: 100%;
+		height: auto;
+	}
+	.informacaoCarrinho{
+		width: 300px; 
+		height: 50px; 
+		float: right;
+		margin-top: 100px;
+	}
+	.produto{
+		width: 100%;
+		height: 250px;
+		background-color: #D0D0D0;
+	}
+	.imagem{
+		width: 35%; 
+		height: 250px; 
+		float: left;
+		background-color: #D0D0D0;
+	}
+	.informacao{
+		width: 65%; 
+		height: 50px; 
+		float: right;
+		background-color: #D0D0D0;
+	}
+	.preco{
+		width: 30%; 
+		height: 200px; 
+		float: left;
+		background-color: #D0D0D0;
+		margin-left: 10px;
+	}
+	.carrinho{
+		width: 30%; 
+		height: 200px; 
+		float: left;
+		background-color: #D0D0D0;
+	}
+	
+/*Opera Fix*/
+	body:before {
+		content:"";
+		height:100%;
+		float:left;
+		width:0;
+		margin-top:-32767px;
+}
+	#texto{
+		border-radius:50px 5px;
+		text-align:center;
+		width:250px;
+		height:30px;
+		
+	}
+	h1{
+		padding-top:20px;
+	}
+	h2{
+		height: 20px;
+		text-align: center;
+		font-size:16pt;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-weight:bold;
+	}
+	h3{
+		height: 40px;
+		text-align: center;
+		font-size:16pt;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-weight:bold;
+		background-color:#999999;
+		margin-left: 20px;
+		margin-top: 55px;
+		width: 800px;
+	}
+	h4{
+		height: 50px;
+		text-align: left;
+		font-size:12pt;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		margin-left: 20px;
+		width: 800px;
+	}
+	h5{
+		height: 40px;
+		text-align: center;
+		font-size:16pt;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-weight:bold;
+		background-color:#999999;
+	}
+	h6{
+		text-align: center;
+		font-size:16pt;
+		height:5px;
+	}
+        h7{
+                text-align: left;
+		font-size:12pt;
+		height:auto;
+        }
+	h10{
+		background-color:#990;
+		border-radius:50px 50px;
+		color:white;
+		text-align:center;
+		width:250px;
+		height:25px;
+		opacity:0.6;
+	}
+	ul li{
+		text-align:left;
+	}
+	.orderBy{
+		width:95%;
+		height:20px;
+		background-color: grey;
+		margin-top: 10px;
+	}
+	#combo{
+		border-radius:50px 50px;
+		text-align:center;
+		width:150px;
+		height:30px;
+	}
+	#graficos{
+		overflow:auto;
+		background-color:#FFF;
+		top:16%;
+		right:500px;
+		position:absolute;
+		text-align: center;
+		border: solid 1px Gray;
+		font-size:12pt;
+		font-family:Georgia, "Times New Roman", Times, serif;
+		font-weight:bold;
+		border-radius:4px;
+		box-shadow:1px 1px #666666;
+		height:700px;
+		width:300px;
+	}
+	.tabela{
+		float: left;
+		margin-left: 20%;
+		margin-top: 8%;
+		width: 60%;
+		text-align: center;
+	}
+	tr{
+		height: 50px;
+	}
+	.tabela2{
+		background-color:white;
+		float: left;
+		margin-left: 20%;
+		width: 60%;
+		text-align: left;
+	}
+	.radiodesign{
+		width:20px;
+		height:20px;
+	}
+        a {
+                color:#ccc; 
+                text-decoration:none;
+        }
+        a:hover {
+                color:#333; 
+                text-decoration:none;
+        }
+        #mask {
+                position:absolute;
+                left:0;
+                top:0;
+                z-index:9000;
+                background-color:#000;
+                display:none;
+        }  
+        #boxes .window {
+                position:absolute;
+                left:0;
+                top:0;
+                width:400px;
+                height:300px;
+                display:none;
+                z-index:9999;
+                border-radius: 10px;
+        }
+        #boxes #dialog {
+                width:400px; 
+                height:300px;
+                background-color:#ffffff;
+        }
+        .close{
+                display:block; 
+                text-align:right;
+        }
+        #barraTitulo{
+                width:100%;
+                height:30px;
+                background-color:gray;
+                border-radius: 5px;
+                border-bottom: 1px solid black;
+        }
+        h8{
+                width: 100%;
+                height:auto;
+                text-align:center;
+                font-family:verdana;
+                font-size:20px;
+                margin-bottom: 0px;
+                margin-top: 0px;
+        }
+        #contenido{
+                width: 80%;
+                height: auto;
+                margin-left: 50px;
+        }
+        .login{
+                width: 300px;
+                height: 30px;
+                font-size:20px;
+                margin-top: 5px;
+
+        }
+        .senha{
+                width: 300px;
+                height: 30px;
+                font-size:20px;
+        } 
+        p{
+                width: 100%;
+                height:auto;
+                text-align:left;
+                margin-left: 110px;
+                font-family:verdana;
+                font-size:20px;
+                font-weight: bold;
+                margin-bottom: 0px;
+                margin-top: 5px;
+        }
